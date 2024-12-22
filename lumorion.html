@@ -9,6 +9,7 @@
     <script defer src="resources/scripts/script.js"></script>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
     <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
 <body>
 
@@ -33,64 +34,87 @@
 
     <!-- Header Section -->
     <header class="hero">
-        <video autoplay muted loop class="background-video">
+        <video class="background-video" autoplay loop muted playsinline>
             <source src="resources/videos/background.mp4" type="video/mp4">
-            Din webbläsare stödjer inte video taggen.
         </video>
         <div class="overlay">
             <h1 class="fade-in">Välkommen till <span>Lumorion Studios</span></h1>
             <p class="fade-in">Där Din Kreativa Resa Börjar</p>
-            <a href="#vision" class="btn fade-in">Starta Din Upptäckt</a>
+            <a href="#vision" class="btn fade-in" aria-label="Starta Din Upptäckt">Starta Din Upptäckt</a>
         </div>
     </header>
+    <main>
+        <!-- Vision Section -->
+        <section id="vision" class="content-section reveal">
+            <h2>Vision</h2>
+            <p class="section-description">
+                Lumorion Studios kombinerar spelglädje, lärande och innovation för att skapa upplevelser som utbildar och inspirerar. 
+                Våra spel sträcker sig från retro-inspirerade 2D-äventyr till banbrytande VR-upplevelser.
+            </p>
+            <div class="vision-grid">
+                <article class="vision-item">
+                    <i class="fas fa-gamepad"></i>
+                    <h3>Lärande och Utveckling genom Spel</h3>
+                    <p>Utforska ämnen som vetenskap och historia i spel som blandar lärande med äventyr.</p>
+                    <ul class="feature-list">
+                        <li><i class="fas fa-check"></i> Problemlösning & Kreativitet</li>
+                        <li><i class="fas fa-check"></i> Interaktivt Lärande</li>
+                        <li><i class="fas fa-check"></i> 2D & 3D Upplevelser</li>
+                    </ul>
+                </article>
+                <article class="vision-item">
+                    <i class="fas fa-vr-cardboard"></i>
+                    <h3>Dynamiska Upplevelser</h3>
+                    <p>Upptäck nya dimensioner genom våra VR-upplevelser.</p>
+                    <ul class="feature-list">
+                        <li><i class="fas fa-check"></i> VR Utbildning</li>
+                        <li><i class="fas fa-check"></i> Virtuella Museer</li>
+                        <li><i class="fas fa-check"></i> Historiska Äventyr</li>
+                    </ul>
+                </article>
+            </div>
+            <div class="stats-container">
+                <div class="stat-item">
+                    <span class="stat-number">100+</span>
+                    <span class="stat-label">Projekt</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number">10k+</span>
+                    <span class="stat-label">Användare</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number">24/7</span>
+                    <span class="stat-label">Support</span>
+                </div>
+            </div>
+        </section>
 
-    <!-- Learning Section -->
-    <section id="vision" class="content-section reveal">
-        <h2>Vision</h2>
-        <p class="section-description">
-            Lumorion Studios kombinerar spelglädje, lärande och innovation för att skapa upplevelser som utbildar och inspirerar. <br> Våra spel sträcker sig från retro-inspirerade 2D-äventyr till banbrytande VR-upplevelser.
-        </p>
-        <div class="vision-grid">
-            <article class="vision-item">
-                <h3>Lärande och Utveckling genom Spel</h3>
-                <p>Utforska ämnen som vetenskap och historia i spel som blandar lärande med äventyr. <br>
-                Spel som utvecklar problemlösning och kreativitet, som att lösa pussel i ett 2D</p>
-            </article>
-            <article class="vision-item">
-                <h3>Dynamiska Upplevelser</h3>
-                <p>Gå in i andra dimensioner som öppnar upp helt nya världar. Hitta lugnet i det buddistiska templet eller följ med på en resa genom rymden. <br>
-                    för att lära dig mer om vår historia.</p>
-            </article>
-            <!-- Fler lärandeobjekt... -->
-        </div>
-    </section>
-
-<!-- Projects Section -->
-<section id="projects" class="content-section reveal">
-    <h2>Min resa</h2>
-    <p class="section-description">
-        Denna sektion är till för mig och dig. Här kommer jag lägga upp mina projekt som en del av min resa som utvecklare<br>
-        Jag ska dokumentera och göra guider så man enkelt kan följa med och lära sig samt kunna gå tillbaka och repetera.<br>
-        Alla tips som kan tänkas vara bra kommer även att publiceras här inom respketive område.
-    </p>
-    <div class="projects-container">
-        <ul>
-            <h3>Snabbstart Python!</h3>
-            <h4>Lär dig sätta upp en IDE för Phyton och skapa ett program som skriver ut Hello World!</h4>
-            <li>Installera Pythons senaste version <a href="https://www.python.org/downloads/" target="_blank">Ladda ner</a></li>
-            <li>Installera PyCharm Community <a href="https://www.jetbrains.com/pycharm/download/?section=windows" target="_blank">Ladda ner</a></li>
-            <li>Starta upp PyCharm och välj Python version 3.13 som din interpreter</li>
-            <li>Skapa ett nytt projekt och döp det till "Hello World"</li>
-            <li>Skriv i kodredigeraren: <code>print("Hello World!")</code> och tryck sedan på Run</li>
-            <li>"Hello World" kommer då att skrivas ut i Konsolen</li>
-            <li>Du har nu lärt dig hur man skapar ett Python-program som skriver ut text! Bra jobbat och lycka till med nästa projekt!</li>
-        </ul>
-        <img src="https://www.ciat.edu/wp-content/uploads/2022/09/python-logo-1.png" alt="Python Project Image">
-    </div>
-
-    <a href="#projects" class="btn">Lär dig mer!</a>
-</section>
-
+        <!-- Learning Section -->
+        <section id="learning" class="content-section reveal">
+            <h2>Lärande</h2>
+            <p class="section-description">
+                Denna sektion är till för mig och dig. Här kommer jag lägga upp mina projekt som en del av min resa som utvecklare.
+                Jag ska dokumentera och göra guider så man enkelt kan följa med och lära sig samt kunna gå tillbaka och repetera.
+                Alla tips som kan tänkas vara bra kommer även att publiceras här inom respektive område.
+            </p>
+            <div class="projects-container">
+                <div class="tutorial-card">
+                    <h3>Snabbstart Python!</h3>
+                    <h4>Lär dig sätta upp en IDE för Python och skapa ett program som skriver ut Hello World!</h4>
+                    <ol class="tutorial-steps">
+                        <li>Installera Pythons senaste version <a href="https://www.python.org/downloads/" target="_blank" rel="noopener noreferrer">Ladda ner</a></li>
+                        <li>Installera PyCharm Community <a href="https://www.jetbrains.com/pycharm/download/?section=windows" target="_blank" rel="noopener noreferrer">Ladda ner</a></li>
+                        <li>Starta upp PyCharm och välj Python version 3.13 som din interpreter</li>
+                        <li>Skapa ett nytt projekt och döp det till "Hello World"</li>
+                        <li>Skriv i kodredigeraren: <code>print("Hello World!")</code> och tryck sedan på Run</li>
+                        <li>"Hello World" kommer då att skrivas ut i Konsolen</li>
+                        <li>Du har nu lärt dig hur man skapar ett Python-program som skriver ut text! Bra jobbat och lycka till med nästa projekt!</li>
+                    </ol>
+                    <img src="https://www.ciat.edu/wp-content/uploads/2022/09/python-logo-1.png" alt="Python logotyp" loading="lazy">
+                </div>
+            </div>
+        </section>
+    </main>
 
     <!-- connect Section -->
     <section id="connect" class="content-section reveal">
