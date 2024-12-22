@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lumorion Studios - Din Kreativa Hubb</title>
+    <meta name="description" content="Lumorion Studios är din plats för inspiration, lärande och gemenskap inom game development och programmering.">
+    <link rel="stylesheet" href="resources/css/style.css">
+    <script defer src="resources/scripts/script.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+</head>
+<body>
+
+    <!-- Navigation -->
+    <nav id="navbar" aria-label="Huvudmeny">
+        <div class="logo"><img src="resources/images/logo (3).png" alt="Lumorion Studios Logo" width="200"></div>
+        <ul>
+            <li><a href="#vision">Vision</a></li>
+            <li class="dropdown">
+                <a href="#learning">Lärande</a>
+                <ul class="dropdown-menu">
+                    <a href="#phyton">Phyton</a>
+                    <a href="#javascript">JavaScript</a>
+                    <a href="#cplusplus">C++</a>
+                </ul>
+            </li>
+            <li><a href="#connect">Connect</a></li>
+            <li><a href="#news">Nyheter</a></li>
+        </ul>
+        <a href="#" class="mobile-menu-toggle" aria-label="Open Mobile Menu"><span class="bar"></span><span class="bar"></span><span class="bar"></span></a>
+    </nav>
+
+    <!-- Header Section -->
+    <header class="hero">
+        <video autoplay muted loop class="background-video">
+            <source src="background.mp4" type="video/mp4">
+            Din webbläsare stödjer inte video taggen.
+        </video>
+        <div class="overlay">
+            <h1 class="fade-in">Välkommen till <span>Lumorion Studios</span></h1>
+            <p class="fade-in">Där Din Kreativa Resa Börjar</p>
+            <a href="#vision" class="btn fade-in">Starta Din Upptäckt</a>
+        </div>
+    </header>
+
+    <!-- Learning Section -->
+    <section id="vision" class="content-section reveal">
+        <h2>Vision</h2>
+        <p class="section-description">
+            Lumorion Studios kombinerar spelglädje, lärande och innovation för att skapa upplevelser som utbildar och inspirerar. <br> Våra spel sträcker sig från retro-inspirerade 2D-äventyr till banbrytande VR-upplevelser.
+        </p>
+        <div class="vision-grid">
+            <article class="vision-item">
+                <h3>Lärande och Utveckling genom Spel</h3>
+                <p>Utforska ämnen som vetenskap och historia i spel som blandar lärande med äventyr. <br>
+                Spel som utvecklar problemlösning och kreativitet, som att lösa pussel i ett 2D</p>
+            </article>
+            <article class="vision-item">
+                <h3>Dynamiska Upplevelser</h3>
+                <p>Gå in i andra dimensioner som öppnar upp helt nya världar. Hitta lugnet i det buddistiska templet eller följ med på en resa genom rymden. <br>
+                    för att lära dig mer om vår historia.</p>
+            </article>
+            <!-- Fler lärandeobjekt... -->
+        </div>
+    </section>
+
+<!-- Projects Section -->
+<section id="projects" class="content-section reveal">
+    <h2>Min resa</h2>
+    <p class="section-description">
+        Denna sektion är till för mig och dig. Här kommer jag lägga upp mina projekt som en del av min resa som utvecklare<br>
+        Jag ska dokumentera och göra guider så man enkelt kan följa med och lära sig samt kunna gå tillbaka och repetera.<br>
+        Alla tips som kan tänkas vara bra kommer även att publiceras här inom respketive område.
+    </p>
+    <div class="projects-container">
+        <ul>
+            <h3>Snabbstart Python!</h3>
+            <h4>Lär dig sätta upp en IDE för Phyton och skapa ett program som skriver ut Hello World!</h4>
+            <li>Installera Pythons senaste version <a href="https://www.python.org/ftp/python/3.13.1/python-3.13.1-amd64.exe" target="_blank">Ladda ner</a></li>
+            <li>Installera PyCharm <a href="https://download.jetbrains.com/python/pycharm-community-2024.3.1.1.exe" target="_blank">Ladda ner</a></li>
+            <li>Starta upp PyCharm och välj Python version 3.13 som din interpreter</li>
+            <li>Skapa ett nytt projekt och döp det till "Hello World"</li>
+            <li>Skriv i kodredigeraren: <code>print("Hello World!")</code> och tryck sedan på Run</li>
+            <li>"Hello World" kommer då att skrivas ut i Konsolen</li>
+            <li>Du har nu lärt dig hur man skapar ett Python-program som skriver ut text! Bra jobbat och lycka till med nästa projekt!</li>
+        </ul>
+        <img src="https://www.ciat.edu/wp-content/uploads/2022/09/python-logo-1.png" alt="Python Project Image">
+    </div>
+
+    <a href="#projects" class="btn">Lär dig mer om Phyton</a>
+</section>
+
+
+    <!-- connect Section -->
+    <section id="connect" class="content-section reveal">
+        <h2>Connect</h2>
+        <p class="section-description">
+            Lumorion Connect är en plats där du kan växa tillsammans med andra. Delta, dela, och forma framtiden för spel och tech.
+        </p>
+        <div class="connect-grid">
+            <h3></h3>
+            <!-- Fler gemenskapsobjekt... -->
+        </div>
+    </section>
+
+    <!-- Blog Section -->
+    <section id="blog" class="content-section reveal">
+        <h2>Blogg</h2>
+        <p class="section-description">
+            Håll dig uppdaterad med våra tankar, erfarenheter och insikter inom branschen.
+        </p>
+        <div class="blog-grid">
+            <!-- Lägg till fler blogginlägg här -->
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="content-section reveal">
+        <h2>Kontakta Oss</h2>
+        <p class="section-description">
+            Vi är bara ett meddelande bort! Om du har frågor, idéer eller vill samarbeta, hör av dig.
+        </p>
+        <form id="contact-form" action="#" method="post">
+            <!-- Lägg till formulärfält här -->
+        </form>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2024 Lumorion Studios | Utforska, Skapa, Inspireras</p>
+    </footer>
+
+    <a href="#" class="back-to-top">↑</a>
+
+</body>
+</html>
