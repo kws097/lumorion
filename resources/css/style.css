@@ -17,9 +17,9 @@ body {
 nav {
     position: fixed;
     width: 100%;
-    background-color: rgba(0, 0, 0, 0.8);
     display: flex;
     justify-content: space-between;
+    background-color: #0d0d0da1;
     align-items: center;
     padding: 10px 20px;
     z-index: 1000;
@@ -41,7 +41,7 @@ nav .dropdown:hover .dropdown-menu {
 }
 
 nav .logo img {
-    height: 70px;
+    height: 60px;
     width: auto;
     padding:0;
 }
