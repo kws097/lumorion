@@ -251,11 +251,16 @@ header h1 span {
     right: 20px;
     background-color: #d4af37;
     color: #0d0d0d;
-    padding: 15px 15px;
+    padding: 15px;
     border-radius: 50%;
     text-decoration: none;
     opacity: 0;
     transition: opacity 0.3s;
+    width: 50px; /* Adjust as needed */
+    height: 50px; /* Adjust as needed */
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .back-to-top.show {
